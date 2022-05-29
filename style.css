@@ -1,0 +1,66 @@
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+
+.header {  
+    background-color: purple;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.split {
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    height: 90%;
+    position: fixed;
+    left: 0;
+    background-color: green;
+    width: 10%;
+    margin-top: 80px;
+}
+
+.left::-webkit-scrollbar {
+    width: 10px;
+    background-color: #aaa;
+}
+
+.left::-webkit-scrollbar-thumb {
+    background: gray;
+  }
+
+.right {
+    background-color: red;
+    overflow-y: auto;
+    width: 90%;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 5px;
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 0 5px 0;
+    border-top: 2px solid black;
+}
+
+li:hover {
+    background-color: darkgreen;
+}
+
+.last {
+    border-bottom: 2px solid black;
+}
