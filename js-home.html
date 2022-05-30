@@ -3,39 +3,22 @@
     <head>
         <title>Knowledge Website</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/re-useable.js" type="text/javascript" defer></script>
     </head>
     <body>
-            <header class="header">
-                <a class="header-item" href="index.html">HOME</a>
-                <a class="header-item" href="html-home.html">HTML</a>
-                <a class="header-item" href="css-home.html">CSS</a>
-                <a class="header-item" href="js-home.html">JAVASCRIPT</a>
-            </header>
+        <!--re-useable Header component-->
+        <header-component></header-component>
 
-            <div class="split left">
-                <nav class="column">
-                    <h3>Javascript Basics</h3>
-                    <ul>
-                        <a href="#"><li><p class="list-item">Headings</p></li></a>
-                        <a href="#"><li><p class="list-item">Paragraphs</p></li></a>
-                        <a href="#"><li><p class="list-item">Comments</p></li></a>
-                    </ul>
-                    <h3>Javascript variables</h3>
-                    <ul>
-                        <a href="#"><li><p class="list-item">Input</p></li></a>
-                        <a href="#"><li><p class="list-item">Submit</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                    </ul>
-                </nav>
-            </div>
+        <!--re-useable HTML List component-->
+        <js-list></js-list>
         
-            <div class="split right">
-        
-                <main id="center" class="column">
-                        <h1>Welcome to my Javascript knowledge realm</h1>
-                        <p>Learn all things Javascript</p>
-                </main>
-            </div>
+        <div class="split right">
+    
+            <main>
+                    <h1>Welcome to my Javascript knowledge realm</h1>
+                    <p>Learn all things Javascript</p>
+            </main>
+        </div>
     
     </body>
 </html>

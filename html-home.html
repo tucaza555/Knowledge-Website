@@ -3,89 +3,31 @@
     <head>
         <title>Knowledge Website</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/re-useable.js" type="text/javascript" defer></script>
+        <script src="js/code-snips.js" type="text/javascript" defer></script>
     </head>
     <body>
-            <header class="header">
-                <a class="header-item" href="index.html">HOME</a>
-                <a class="header-item" href="html-home.html">HTML</a>
-                <a class="header-item" href="css-home.html">CSS</a>
-                <a class="header-item" href="js-home.html">JAVASCRIPT</a>
-            </header>
+        <!--re-useable Header component-->
+        <header-component></header-component>
 
-            <div class="split left">
-                <nav class="column">
-                    <h3>HTML Basics</h3>
-                    <ul>
-                        <a href="#"><li><p class="list-item">Headings</p></li></a>
-                        <a href="#"><li><p class="list-item">Paragraphs</p></li></a>
-                        <a href="#"><li><p class="list-item">Comments</p></li></a>
-                    </ul>
-                    <h3>HTML Forms</h3>
-                    <ul>
-                        <a href="#"><li><p class="list-item">Input</p></li></a>
-                        <a href="#"><li><p class="list-item">Submit</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">POST</p></li></a>
-                        <a href="#"><li><p class="list-item">END2</p></li></a>
-                        <a href="#"><li><p class="list-item">END</p></li></a>
-                    </ul>
-                </nav>
-            </div>
-        
-            <div class="split right">
-        
-                <main id="center" class="column">
-                        <h1>Welcome to my HTML knowledge realm</h1>
-                        <p>Learn all things HTML</p>
-
-<!-- ------------------------------ Code Snippet ------------------------------ -->
-
-<textarea readonly rows="1" class="html-snippet">
-<p>Hello, World!</p>
-</textarea>
-
-<!-- ----------------------------------- End ----------------------------------- -->
-
-                        <p>Learn all things HTML</p>
-                        <p>Learn all things HTML</p>
-                        <p>Learn all things HTML</p>
-                        <p>Learn all things HTML</p>
-
-<!-- ------------------------------ Code Snippet ------------------------------ -->
-
-<textarea readonly rows="9" class="html-snippet">
-<body>
-    <h1>This is a title</h1>
-    <p>Hello, World!</p>
-    <p>Hello, World!</p>
-    <p>Hello, World!</p>
-    <p>Hello, World!</p>
-    <p>Hello, World!</p>
-    <p>Hello, World!</p>
-</body>
-</textarea>
-
-<!-- ----------------------------------- End ----------------------------------- -->
-                </main>
-            </div>
+        <!--re-useable HTML List component-->
+        <html-list></html-list>
     
+        <div class="split right home">
+            <main>
+                <h1>Welcome to my HTML knowledge realm</h1>
+                <p>Learn all things HTML</p>
+
+                <p-code-one></p-code-one>
+
+                <p>Learn all things HTML</p>
+                <p>Learn all things HTML</p>
+                <p>Learn all things HTML</p>
+                <p>Learn all things HTML</p>
+
+                <p-code-two></p-code-two>
+
+            </main>
+        </div>
     </body>
 </html>
